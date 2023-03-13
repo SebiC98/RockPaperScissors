@@ -34,6 +34,7 @@ struct ContentView: View {
                 }
             }
         }
+        .font(.largeTitle)
         .alert("Game over!", isPresented: $showAlert){
             Button("Restart", action: restartGame)
         } message: {
